@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background: #000000;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #000000;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply relative overflow-hidden bg-gradient-to-br from-obsidian via-[#070b13] to-navy px-5 py-20 sm:px-8 lg:py-28;
+  }
+
+  .section-shell::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(circle at 12% 18%, rgba(252, 163, 17, 0.12), transparent 28%),
+      radial-gradient(circle at 86% 70%, rgba(252, 163, 17, 0.07), transparent 24%);
+  }
+
+  .section-shell > * {
+    @apply relative z-10 mx-auto max-w-7xl;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-bold transition duration-300 sm:px-7;
+  }
+
+  .btn-primary {
+    @apply bg-gold text-obsidian shadow-gold hover:-translate-y-1 hover:bg-[#ffb536];
+  }
+
+  .btn-secondary {
+    @apply border border-gold/45 bg-gold/10 text-gold hover:-translate-y-1 hover:bg-gold hover:text-obsidian;
+  }
+
+  .btn-ghost {
+    @apply border border-white/10 bg-white/[0.045] text-white backdrop-blur-xl hover:-translate-y-1 hover:border-gold/45 hover:text-gold;
+  }
+
+  .gold-text {
+    background: linear-gradient(135deg, #fca311 0%, #fff2c7 48%, #fca311 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .luxury-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.18) 1px, transparent 1px);
+    background-size: 46px 46px;
+    mask-image: radial-gradient(circle at center, black, transparent 72%);
+  }
+}
