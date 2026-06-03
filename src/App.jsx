@@ -208,9 +208,6 @@ function Hero() {
       <div className="absolute inset-0 opacity-[0.06] luxury-grid" />
 
       <motion.div variants={stagger} initial="hidden" animate="visible" className="relative z-10 mx-auto max-w-6xl text-center">
-        <motion.div variants={fadeUp} className="mb-7 inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-sm font-medium text-gold shadow-gold backdrop-blur-xl">
-          <Sparkles size={16} /> Placement-ready portfolio
-        </motion.div>
         <motion.h1 variants={fadeUp} className="text-5xl font-black tracking-tight text-white sm:text-7xl lg:text-8xl">
           Aadithya <span className="gold-text">A</span>
         </motion.h1>
