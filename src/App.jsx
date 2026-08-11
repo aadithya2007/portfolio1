@@ -76,8 +76,8 @@ const experienceHighlights = [
 const contactItems = [
   { label: 'Email', value: 'Available on request', icon: Mail, href: 'aadithya2807@gmail.com' },
   { label: 'Phone', value: 'Available on request', icon: Phone, href: '+91 9488355023' },
-  { label: 'GitHub', value: 'GitHub Profile', icon: GitBranch, href: 'https://github.com/' },
-  { label: 'LinkedIn', value: 'LinkedIn Profile', icon: CircleUser, href: 'https://www.linkedin.com/' },
+  { label: 'GitHub', value: 'GitHub Profile', icon: GitBranch, href: 'https://github.com/aadithya2007' },
+  { label: 'LinkedIn', value: 'LinkedIn Profile', icon: CircleUser, href: 'https://www.linkedin.com/aadithya-a-9a97b1304' },
 ]
 
 const fadeUp = {
